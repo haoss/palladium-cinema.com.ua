@@ -1,0 +1,109 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Новости и акции' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Новости и акции' + ' - Palladium Cinema' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    <!-- Preloader -->
+    .loader
+      .loader__block
+    
+    include ./_include/_slideout-menu
+      
+    #base
+    
+      include ./_include/_header
+      
+      .container
+        .section__head
+          h1 Новости и акции
+      
+      // Content
+      .section.news.nopt
+        .container
+          
+          #news__row.row
+            .col-md-6
+              .news__block
+                figure
+                  img(src="./tmp/news/r428_banner_cinema-08.png", alt="").img-responsive.hidden-sm.hidden-xs
+                  figcaption
+                    span Наше приложение для смартфонов:
+                  a(href="#") 
+                   
+            .col-md-6
+              .news__block
+                figure
+                  img(src="./tmp/news/r4280_500-bon-new.jpg", alt="").img-responsive.hidden-sm.hidden-xs
+                  figcaption
+                    span - 30% каждому предъявителю билета Palladium Cinema
+                  a(href="#")  
+                  
+            .col-md-6
+              .news__block
+                figure
+                  img(src="./tmp/news/r428_banner_cinema-08.png", alt="").img-responsive.hidden-sm.hidden-xs
+                  figcaption
+                    span Выгодное предложение от Palladium Cinema!
+                  a(href="#") 
+                   
+            .col-md-6
+              .news__block
+                figure
+                  img(src="./tmp/news/r4280_500-bon-new.jpg", alt="").img-responsive.hidden-sm.hidden-xs
+                  figcaption
+                    span Твой яркий девичник!
+                  a(href="#")  
+                  
+            .col-md-6
+              .news__block
+                figure
+                  img(src="./tmp/news/r428_banner_cinema-08.png", alt="").img-responsive.hidden-sm.hidden-xs
+                  figcaption
+                    span Любимые игры на большом экране в кинотеатре PALLADIUM CINEMA!
+                  a(href="#") 
+                   
+            .col-md-6
+              .news__block
+                figure
+                  img(src="./tmp/news/r4280_500-bon-new.jpg", alt="").img-responsive.hidden-sm.hidden-xs
+                  figcaption
+                    span Балийский массаж стоп во время сеанса в VIP зале
+                  a(href="#")  
+                  
+            .col-md-6
+              .news__block
+                figure
+                  img(src="./tmp/news/r428_banner_cinema-08.png", alt="").img-responsive.hidden-sm.hidden-xs
+                  figcaption
+                    span Наше приложение для смартфонов:
+                  a(href="#") 
+                   
+            .col-md-6
+              .news__block
+                figure
+                  img(src="./tmp/news/r4280_500-bon-new.jpg", alt="").img-responsive.hidden-sm.hidden-xs
+                  figcaption
+                    span - 30% каждому предъявителю билета Palladium Cinema
+                  a(href="#")  
+                  
+      
+      include ./_include/_footer
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/respond/respond.min.js'><![endif]
+
+    script(src='./js/libs/jquery/jquery-2.1.4.min.js')
+    script(src='./js/libs/jquery/jquery-migrate-1.2.1.min.js')
+    script(src='./js/libs/modernizr/modernizr.js')
+    script(src='./js/libs/plugins-scroll/plugins-scroll.js')
+    script(src='./js/vendors.js')
+    script(src='./js/common.js')

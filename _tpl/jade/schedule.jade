@@ -1,0 +1,558 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Расписание' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Расписание' + ' - Palladium Cinema' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    <!-- Preloader -->
+    .loader
+      .loader__block
+    
+    include ./_include/_slideout-menu
+      
+    #base
+    
+      include ./_include/_header
+      
+      // Content
+      .container
+        
+        // section head
+        .section__head
+          .h1 Расписание
+          
+        .section.schedule
+          .schedule__row
+            .schedule__row__left
+              .poster
+                figure
+                  .img
+                    img(src="./tmp/poster/poster-1.jpg", alt="")
+                  figcaption
+                    p Квант милосердия
+                  a(href="#")
+              
+            .schedule__row__center
+              .scroll__body.scroll__body--center
+                
+                table.schedule__table
+                  tbody
+                    tr
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom чт
+                            | 19
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom пт
+                            | 20
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom сб
+                            | 21
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom вс
+                            | 22
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom пн
+                            | 23
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom вт
+                            | 24
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom ср
+                            | 25
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                                        
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom ср
+                            | 25
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+          .schedule__row
+            .schedule__row__left
+              .poster
+                figure
+                  .img
+                    img(src="./tmp/poster/poster-1.jpg", alt="")
+                  figcaption
+                    p Квант милосердия
+                  a(href="#")
+              
+            .schedule__row__center
+              .scroll__body.scroll__body--center
+                
+                table.schedule__table
+                  tbody
+                    tr
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom чт
+                            | 19
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom пт
+                            | 20
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom сб
+                            | 21
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom вс
+                            | 22
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom пн
+                            | 23
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom вт
+                            | 24
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom ср
+                            | 25
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                                        
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom ср
+                            | 25
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+          .schedule__row
+            .schedule__row__left
+              .poster
+                figure
+                  .img
+                    img(src="./tmp/poster/poster-1.jpg", alt="")
+                  figcaption
+                    p Квант милосердия
+                  a(href="#")
+              
+            .schedule__row__center
+              .scroll__body.scroll__body--center
+                
+                table.schedule__table
+                  tbody
+                    tr
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom чт
+                            | 19
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom пт
+                            | 20
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom сб
+                            | 21
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      
+
+        
+        - var posters = ["Квант милосердия", "Искусственный интеллект и другое длинное название", "Касабланка", "Доктор Хаус"]
+        
+        // Schedule
+        .section.schedule
+          .schedule__body.schedule__body--color
+            .section__head
+              .h1 Скоро в 
+                span Прокате
+            
+            .schedule__scroll
+              .schedule__scroll__shadow-left
+              .schedule__scroll__shadow-right
+              .schedule__scroll__body.scroll__body
+                - each poster, i in posters
+                  .poster
+                    figure
+                      .img
+                        img(src="./tmp/poster/poster-#{i+1}.jpg", alt="")
+                      figcaption
+                        p #{poster}
+                      a(href="#")
+          
+      include ./_include/_subscription
+      include ./_include/_seo-text
+      
+      include ./_include/_footer
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/respond/respond.min.js'><![endif]
+
+    script(src='./js/libs/jquery/jquery-2.1.4.min.js')
+    script(src='./js/libs/jquery/jquery-migrate-1.2.1.min.js')
+    script(src='./js/libs/modernizr/modernizr.js')
+    script(src='./js/libs/plugins-scroll/plugins-scroll.js')
+    script(src='./js/vendors.js')
+    script(src='./js/common.js')

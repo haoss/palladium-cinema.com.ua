@@ -1,0 +1,83 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Схемы залов' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Схемы залов' + ' - Palladium Cinema' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    <!-- Preloader -->
+    .loader
+      .loader__block
+    
+    include ./_include/_slideout-menu
+      
+    #base
+    
+      include ./_include/_header
+      
+      .container
+        
+        .section__head
+          .h1 Схемы залов 
+        
+        .section.scheme
+          .scheme__row.row
+            .col-md-7
+              h2.scheme__title Зал "Афины"
+              img(src="./tmp/scheme/scheme-big-2-1.png", alt="").scheme__img.img-responsive
+                
+            .col-md-5
+              .scheme__gallery.gallery
+                div
+                  a(href="./tmp/hall/r4000c380190_3896.jpg").gallery-item.thumbnails
+                    img(src="./tmp/hall/r4000c380190_3896.jpg", alt="").img-responsive
+                div
+                  a(href="./tmp/hall/r4000c380190_3897.jpg").gallery-item.thumbnails
+                    img(src="./tmp/hall/r4000c380190_3897.jpg", alt="").img-responsive
+                      
+          .scheme__row.row
+            .col-md-7
+              h2.scheme__title Зал "Лондон"
+              img(src="./tmp/scheme/scheme-big-2-1.png", alt="").scheme__img.img-responsive
+                
+            .col-md-5
+              .scheme__gallery.gallery
+                div
+                  a(href="./tmp/hall/r4000c380190_3896.jpg").gallery-item.thumbnails
+                    img(src="./tmp/hall/r4000c380190_3896.jpg", alt="").img-responsive
+                div
+                  a(href="./tmp/hall/r4000c380190_3897.jpg").gallery-item.thumbnails
+                    img(src="./tmp/hall/r4000c380190_3897.jpg", alt="").img-responsive
+                      
+          .scheme__row.row
+            .col-md-7
+              h2.scheme__title VIP - Зал "Париж"
+              img(src="./tmp/scheme/scheme-big-2-1.png", alt="").scheme__img.img-responsive
+                
+            .col-md-5
+              .scheme__gallery.gallery
+                div
+                  a(href="./tmp/hall/r4000c380190_3896.jpg").gallery-item.thumbnails
+                    img(src="./tmp/hall/r4000c380190_3896.jpg", alt="").img-responsive
+                div
+                  a(href="./tmp/hall/r4000c380190_3897.jpg").gallery-item.thumbnails
+                    img(src="./tmp/hall/r4000c380190_3897.jpg", alt="").img-responsive
+      
+      include ./_include/_footer
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/respond/respond.min.js'><![endif]
+
+    script(src='./js/libs/jquery/jquery-2.1.4.min.js')
+    script(src='./js/libs/jquery/jquery-migrate-1.2.1.min.js')
+    script(src='./js/libs/modernizr/modernizr.js')
+    script(src='./js/libs/plugins-scroll/plugins-scroll.js')
+    script(src='./js/vendors.js')
+    script(src='./js/common.js')

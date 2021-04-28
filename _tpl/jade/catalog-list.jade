@@ -1,0 +1,87 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'VIP-зал' //активный пункт меню, список в header.jade
+  -var pageTitle = '50 последних' + ' - Palladium Cinema' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    <!-- Preloader -->
+    .loader
+      .loader__block
+    
+    include ./_include/_slideout-menu
+      
+    #base
+    
+      include ./_include/_header
+      
+      .container
+        a(href="#").schedule__back
+          i.zmdi.zmdi-chevron-left 
+          | Вернуться в 
+          span Каталог
+          
+        .section__head
+          .h1 50 последних
+      
+      // Content
+      .section.nop
+        .container
+          
+          .section__search
+            .form
+              form(action="#")
+                .section__search__title Поиск по каталогу
+                .section__search__row
+                  div
+                    .form-group
+                      input(type="text" placeholder="").form-control.form-control--color
+                  div
+                    button(type="submit").btn.btn--default.btn--search
+                      i.zmdi.zmdi-search
+                      span.hidden-xs.hidden-sm Найти
+      
+      .section.catalog
+        .container
+          
+          #sorting
+            div Сортировка:
+            div
+              a.active(href='#', data-sortby='films-year', data-sortdir='desc', data-sortdir-alt='asc', data-sortdir-value='↑', data-sortdir-alt-value='↓', data-sortdir-current='desc')
+                strong по дате выхода
+                span.sortdir-value ↓
+            div
+              a(href='#', data-sortby='pagetitle', data-sortdir='asc', data-sortdir-alt='desc', data-sortdir-value='↓', data-sortdir-alt-value='↑', data-sortdir-current='asc')
+                strong по названию А-Я
+                span.sortdir-value ↓
+          
+          .catalog__list
+            - for (var i=1; i<=16; i++) {
+            div
+              .poster
+                figure
+                  .img
+                    img(src="./tmp/poster/poster-1.jpg", alt="#{poster}")
+                  figcaption
+                    p Квант милосердия
+                  a(href="#")
+            - }
+      
+      include ./_include/_footer
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/respond/respond.min.js'><![endif]
+
+    script(src='./js/libs/jquery/jquery-2.1.4.min.js')
+    script(src='./js/libs/jquery/jquery-migrate-1.2.1.min.js')
+    script(src='./js/libs/modernizr/modernizr.js')
+    script(src='./js/libs/plugins-scroll/plugins-scroll.js')
+    script(src='./js/vendors.js')
+    script(src='./js/common.js')

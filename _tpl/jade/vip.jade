@@ -1,0 +1,119 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'VIP-зал' //активный пункт меню, список в header.jade
+  -var pageTitle = 'VIP-зал' + ' - Palladium Cinema' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    <!-- Preloader -->
+    .loader
+      .loader__block
+    
+    include ./_include/_slideout-menu
+      
+    #base
+    
+      include ./_include/_header
+      
+      .container
+        .section__head
+          h1 VIP-зал
+          
+      include ./_include/_main-slider
+      
+      // Content
+      .section
+        .container
+          
+          .h1.hidden-sm.hidden-xs VIP - Зал "Париж"
+          
+          .row
+            .col-lg-4.col-lg-push-8.col-md-5.col-md-push-7
+              .vip-block
+                .h3 Стоимость аренды VIP-зала за просмотр фильма:
+                
+                hr
+                
+                table
+                  tbody
+                    tr
+                      th До 18:00
+                      td
+                        | 500 
+                        span грн.
+                    tr
+                      th После 18:00
+                      td
+                        | 700 
+                        span грн.
+                hr
+                
+                p Желаем приятных просмотров!
+              
+              .text-center.visible-sm.visible-xs
+                a(href="#").btn.btn--default.btn--movie
+                  svg#movie.movie-icon(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 30 24', width="30", height="24")
+                    style.
+                      .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#2C2527;}
+                    path#path5.st0(d='M23.05 7.9c.202-.2.504-.4.705-.5.2-.1.503-.2.705-.3 1.208-.4 2.718-.3 3.623.7.705.8.906 2 .705 3-.2 1.1-.805 2.1-1.51 3l-.302.3-.402.5c-2.215 2.7-2.718 5-1.61 7 .502.8 1.207 1.4 2.214 1.7 1.006.3 1.912.3 2.516-.1.302-.2.403-.5.2-.8-.1-.2-.502-.3-1.207-.2-1.308.2-2.214-.3-2.717-1.3-.403-.8-.504-1.5-.302-2.3.2-.8.805-1.9 1.81-3.3l.605-.9c1.913-2.7 2.316-5 1.208-7-1.307-2.3-4.485-2.216-6.8-.816l-.043-.084C20.635 2.6 16.607 0 11.877 0 5.336 0 0 5.4 0 12s5.335 12 11.878 12c6.542 0 11.877-5.4 11.877-12 .1-1.5-.2-2.7-.704-4.1M6.443 14.6c-1.41 0-2.516-1.1-2.516-2.5s1.107-2.5 2.516-2.5c1.41 0 2.517 1.1 2.517 2.5 0 1.3-1.11 2.5-2.518 2.5zm5.436 5.5c-1.41 0-2.517-1.1-2.517-2.5s1.108-2.5 2.518-2.5c1.41 0 2.516 1.1 2.516 2.5 0 1.3-1.107 2.5-2.516 2.5zm-.906-8c0-.6.402-1 1.006-1 .504 0 1.007.4 1.007 1s-.403 1-1.007 1c-.604 0-1.006-.5-1.006-1zm.906-3C10.468 9.1 9.36 8 9.36 6.6s1.108-2.5 2.518-2.5c1.41 0 2.516 1.1 2.516 2.5s-1.107 2.5-2.516 2.5zm5.435 5.5c-1.41 0-2.516-1.1-2.516-2.5s1.107-2.5 2.516-2.5c1.41 0 2.517 1.1 2.517 2.5 0 1.3-1.108 2.5-2.517 2.5z', clip-rule='evenodd', fill='#2c2527', fill-rule='evenodd')
+                  | Каталог фильмов
+                
+            .col-lg-8.col-lg-pull-4.col-md-7.col-md-pull-5
+              .h1.visible-sm.visible-xs VIP - Зал "Париж"
+              
+              p Дорогие друзья! Только Palladium Cinema предлагает Вам уникальную услугу - просмотр шедевров кино и спортивных трансляций на Ваш выбор. Уютный зал для компании из шести человек, где Вы сможете поболеть за любимую команду на мягких кожаных креслах, подогревая спортивный интерес напитками нашего бара и кухней из нашего меню. Также мы предоставляем услугу "X Box на большом экране" в vip-зале "Париж".
+              p Если же Вы хотите красиво удивить свою избранницу - наш совет: создайте романтику с помощью бокала хорошего вина и душевного фильма из нашей фильмотеки. Список фильмов ежедневно пополняется. Если же фильм, который Вы хотите посмотреть отсутствует в нашем списке, Вы можете его заказать, позвонив нам всего лишь за сутки.
+              p В Palladium Cinema Вы всегда в главной роли!
+              
+              .clear20
+              
+              a(href="#").btn.btn--default.btn--movie.hidden-sm.hidden-xs
+                svg#movie.movie-icon(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 30 24', width="30", height="24")
+                  style.
+                    .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#2C2527;}
+                  path#path5.st0(d='M23.05 7.9c.202-.2.504-.4.705-.5.2-.1.503-.2.705-.3 1.208-.4 2.718-.3 3.623.7.705.8.906 2 .705 3-.2 1.1-.805 2.1-1.51 3l-.302.3-.402.5c-2.215 2.7-2.718 5-1.61 7 .502.8 1.207 1.4 2.214 1.7 1.006.3 1.912.3 2.516-.1.302-.2.403-.5.2-.8-.1-.2-.502-.3-1.207-.2-1.308.2-2.214-.3-2.717-1.3-.403-.8-.504-1.5-.302-2.3.2-.8.805-1.9 1.81-3.3l.605-.9c1.913-2.7 2.316-5 1.208-7-1.307-2.3-4.485-2.216-6.8-.816l-.043-.084C20.635 2.6 16.607 0 11.877 0 5.336 0 0 5.4 0 12s5.335 12 11.878 12c6.542 0 11.877-5.4 11.877-12 .1-1.5-.2-2.7-.704-4.1M6.443 14.6c-1.41 0-2.516-1.1-2.516-2.5s1.107-2.5 2.516-2.5c1.41 0 2.517 1.1 2.517 2.5 0 1.3-1.11 2.5-2.518 2.5zm5.436 5.5c-1.41 0-2.517-1.1-2.517-2.5s1.108-2.5 2.518-2.5c1.41 0 2.516 1.1 2.516 2.5 0 1.3-1.107 2.5-2.516 2.5zm-.906-8c0-.6.402-1 1.006-1 .504 0 1.007.4 1.007 1s-.403 1-1.007 1c-.604 0-1.006-.5-1.006-1zm.906-3C10.468 9.1 9.36 8 9.36 6.6s1.108-2.5 2.518-2.5c1.41 0 2.516 1.1 2.516 2.5s-1.107 2.5-2.516 2.5zm5.435 5.5c-1.41 0-2.516-1.1-2.516-2.5s1.107-2.5 2.516-2.5c1.41 0 2.517 1.1 2.517 2.5 0 1.3-1.108 2.5-2.517 2.5z', clip-rule='evenodd', fill='#2c2527', fill-rule='evenodd')
+                | Каталог фильмов
+          
+          .hidden-sm.hidden-xs
+            .clear20
+          hr
+          .clear20
+            
+          .news.news--special
+            .h1 Специальное предложение
+            
+            .row
+              .col-md-6
+                .news__block
+                  figure
+                    img(src="./tmp/news/r428_banner_cinema-08.png", alt="").img-responsive.hidden-sm.hidden-xs
+                    figcaption.visible-xs.visible-sm
+                      span Наше приложение для смартфонов:
+                    a(href="#") 
+                     
+              .col-md-6
+                .news__block
+                  figure
+                    img(src="./tmp/news/r4280_500-bon-new.jpg", alt="").img-responsive.hidden-sm.hidden-xs
+                    figcaption.visible-xs.visible-sm
+                      span - 30% каждому предъявителю билета Palladium Cinema
+                    a(href="#")  
+      
+      include ./_include/_footer
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/respond/respond.min.js'><![endif]
+
+    script(src='./js/libs/jquery/jquery-2.1.4.min.js')
+    script(src='./js/libs/jquery/jquery-migrate-1.2.1.min.js')
+    script(src='./js/libs/modernizr/modernizr.js')
+    script(src='./js/libs/plugins-scroll/plugins-scroll.js')
+    script(src='./js/vendors.js')
+    script(src='./js/common.js')

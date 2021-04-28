@@ -1,0 +1,95 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'VIP-зал' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Каталог фильмов' + ' - Palladium Cinema' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    <!-- Preloader -->
+    .loader
+      .loader__block
+    
+    include ./_include/_slideout-menu
+      
+    #base
+    
+      include ./_include/_header
+      
+      .container
+        a(href="#").schedule__back
+          i.zmdi.zmdi-chevron-left 
+          | Вернуться в 
+          span VIP-зал
+          
+        .section__head
+          h1 Каталог фильмов VIP-зала
+      
+      // Content
+      .section.nop
+        .container
+          
+          .section__search
+            .form
+              form(action="#")
+                .section__search__title Поиск по каталогу
+                .section__search__row
+                  div
+                    .form-group
+                      input(type="text" placeholder="").form-control.form-control--color
+                  div
+                    button(type="submit").btn.btn--default.btn--search
+                      i.zmdi.zmdi-search
+                      span.hidden-xs.hidden-sm Найти
+      
+      .section
+        .container
+          
+          nav.catalog-menu
+            ul
+              li: a(href="#")
+                span Боевик
+              li.drama: a(href="#")
+                span Драма
+              li.comedy: a(href="#")
+                span Комедия
+              li.horror: a(href="#")
+                span Хоррор
+              li.melodrama: a(href="#")
+                span Мелодрама
+              li.fantastik: a(href="#")
+                span Фантастика
+              li.animation: a(href="#")
+                span Анимационный фильм
+              li.historical: a(href="#")
+                span Исторический
+              li.musical: a(href="#")
+                span Мюзикл
+              li.triller: a(href="#")
+                span Триллер
+              li.last50: a(href="#")
+                span 50 последних
+              li.origin-lang: a(href="#")
+                span Язык оригинала
+              li.gold: a(href="#")
+                span Золотая коллекция
+              li.proposal: a(href="#")
+                span Предложения недели
+      
+      include ./_include/_footer
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/respond/respond.min.js'><![endif]
+
+    script(src='./js/libs/jquery/jquery-2.1.4.min.js')
+    script(src='./js/libs/jquery/jquery-migrate-1.2.1.min.js')
+    script(src='./js/libs/modernizr/modernizr.js')
+    script(src='./js/libs/plugins-scroll/plugins-scroll.js')
+    script(src='./js/vendors.js')
+    script(src='./js/common.js')

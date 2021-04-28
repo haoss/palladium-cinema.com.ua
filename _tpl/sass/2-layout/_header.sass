@@ -1,0 +1,88 @@
+/* header */
+.logo
+  &__header
+    width: 130px
+    height: 93px
+
+.header
+  padding-top: 15px
+  color: $add-color-dark
+  padding-bottom: 20px
+
+  &__row
+    display: flex
+    justify-content: space-between
+    position: relative
+    &>div
+      width: 100%
+      &:last-child
+        text-align: right
+    &::after, &::before
+      position: absolute
+      width: 480px
+      height: 1px
+      background: #4d3c30
+      content: ''
+      top: 57px
+      left: 0
+    &::before
+      left: inherit
+      right: 0
+
+  &__phone
+    font-size: rem(16)
+    margin-top: 9px
+    &>div
+      display: table-cell
+      &+div
+        padding-left: 20px
+
+  .logo
+    padding: 0 25px
+    width: auto
+
+/**/
+.language
+  font-size: rem(13)
+  margin-top: 12px
+  ul
+    margin: 0
+    padding: 0
+    li
+      margin: 0
+      padding: 0
+      list-style: none
+      display: inline-block
+      a
+        display: inline-block
+        text-decoration: none
+        color: $add-color-dark
+        &:hover
+          text-decoration: underline
+          color: $link-color
+      &.active
+        display: none
+
+  &--header
+    display: inline-block
+
+/**/
+.social
+  font-size: rem(14)
+  a
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    height: 24px
+    width: 24px
+    background: $add-color-dark
+    text-decoration: none
+    color: #2e282a
+    border-radius: 50%
+    margin: 0 8px
+
+    &:hover
+      background: $link-color
+
+  &--header
+    display: inline-block

@@ -1,0 +1,50 @@
+// mixins
+
+/// Помощник для сброса внутреннего обтекания
+/// @author Николас Галлагер
+/// @link http://nicolasgallagher.com/micro-clearfix-hack/ Micro Clearfix
+// @mixin clearfix
+//   &::after
+//     content: ''
+//     display: table
+//     clear: both
+
+=keyframes($name)
+  @-moz-keyframes #{$name}
+    @content
+  @-webkit-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @-o-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+=animation($duration, $animation)
+  -webkit-animation-duration: $duration
+  -webkit-animation-name: $animation
+  -webkit-animation-fill-mode: forwards
+  -moz-animation-duration: $duration
+  -moz-animation-name: $animation
+  -moz-animation-fill-mode: forwards
+  -o-animation-duration: $duration
+  -o-animation-name: $animation
+  -o-animation-fill-mode: forwards
+  animation-duration: $duration
+  animation-name: $animation
+  animation-fill-mode: forwards
+
+=transition($args...)
+  -webkit-transition: $args
+  -moz-transition: $args
+  -ms-transition: $args
+  -o-transition: $args
+  transition: $args
+
+=filter($filter-type,$filter-amount)
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})')
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})')
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})')
+  -o-filter: $filter-type+unquote('(#{$filter-amount})')
+  filter: $filter-type+unquote('(#{$filter-amount})')

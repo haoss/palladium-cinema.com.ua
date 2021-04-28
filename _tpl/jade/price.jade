@@ -1,0 +1,86 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Стоимость' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Стоимость' + ' - Palladium Cinema' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    <!-- Preloader -->
+    .loader
+      .loader__block
+    
+    include ./_include/_slideout-menu
+      
+    #base
+    
+      include ./_include/_header
+      
+      .container
+        
+        .section__head
+          .h1 Стоимость
+        
+        // Section
+        .section
+            
+          .price-document.row
+            .col-sm-6.col-sm-push-6
+              img(src="./tmp/scheme/scheme-price3.png", alt="").img.img-responsive
+            
+            .col-sm-6.col-sm-pull-6
+              
+              .price-document__body
+                .hidden-xs
+                  h2 Стоимость сеансов
+                table
+                  tbody
+                    tr
+                      th(style='width: 110px;')  
+                      td.td-head(style='width: 110px;') Зона 1
+                      td.separator  
+                      td.td-head(style='width: 110px;') Зона 2
+                    tr
+                      th До 18:00
+                      td(style='width: 110px;')
+                        | 70 
+                        span грн.
+                      td.separator  
+                      td
+                        | 90 
+                        span грн.
+                    tr
+                      th После 18:00
+                      td
+                        | 90 
+                        span грн.
+                      td.separator  
+                      td
+                        | 120 
+                        span грн.
+          
+          .price-info
+            .row
+              .col-md-6
+                img(src="./tmp/hall/glasses.png", alt="").img.img-responsive
+              .col-md-6
+                .price-info-title У нас Вы сможете приобрести практически невесомые 3D очки или фирменные американские Polaroid 3D.
+                p Стоимость очков от 10 грн. Также есть 3D пенсне, для тех кто носит очки с диоптриями.
+      
+      include ./_include/_footer
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/respond/respond.min.js'><![endif]
+
+    script(src='./js/libs/jquery/jquery-2.1.4.min.js')
+    script(src='./js/libs/jquery/jquery-migrate-1.2.1.min.js')
+    script(src='./js/libs/modernizr/modernizr.js')
+    script(src='./js/libs/plugins-scroll/plugins-scroll.js')
+    script(src='./js/vendors.js')
+    script(src='./js/common.js')

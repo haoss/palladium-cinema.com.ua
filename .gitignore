@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+node_modules
+_tpl/bower_components
+_design
+_sass__copy
+*.node
+*.orig

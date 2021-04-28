@@ -1,0 +1,136 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Контакты' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Контакты' + ' - Palladium Cinema' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    <!-- Preloader -->
+    .loader
+      .loader__block
+    
+    include ./_include/_slideout-menu
+      
+    #base
+    
+      include ./_include/_header
+      
+      .container
+        .section__head
+          h1 Контакты
+          
+      .banner.banner--map
+        // Google Map
+        script(src='https://maps.googleapis.com/maps/api/js?sensor=false')
+        script.
+          function initialize() {
+          var myLatlng = new google.maps.LatLng(49.9882846,36.2307787);
+          var map_options = {
+            zoom: 16,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            center: myLatlng,
+            scrollwheel: false,
+            disableDefaultUI: true
+          }
+          var map = new google.maps.Map(document.getElementById('map'), map_options)
+          var myIcon = new google.maps.MarkerImage('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAsTAAALEwEAmpwYAAABqlBMVEUAAAC/Pz//Pz//MzPaSEi/Px/fPz/GODjlTDPsSDbuREThSzzkUDXlTD/mSDzoTTfBPSi8OC/mTjznTTvAOC3oST7pSzu/OirkSjrmSzzAOivnTT2+OSnlTDrmTDvmSzrnTDvoTT3lSzvmSjvnTTvnTDq/OCvmTDvmSzznTDvnTDzlSzvmTDzmSzu/OCvnSju/OCroSzzmTDvnSzu/OSu/OCrmTDzlSzznSjznTDrmTDzmSjvnSzq/OSvnTDzANyvAOCq/OSrlSzznTDzmTDy+OSnmSjzANynlTDvmSzzlSzvlTDznTDznSjzmSjznTDzmSjrlTDvlSjznTDvnSzzmTDrlTDrlSjrnSjznSjrlTDrnTDrAOSu/OSvnTDrnSjrlTDvlTDzlSjy+OSrANyvlTDzlSjq+OSvlSjzlTDzAOSvAOivBOSzCOizDOizDOyzGPC7HPC7NQDDNQDHPQTHQQTHRQTLSQjPTQjPTQzTWRDXXRDXXRDbYRTXbRjfbRzfcRjjcRzfdRzfeSDjfSDnhSTnhSTrkSjrkSjvkSzvlSzvmTDznSzznTDxS9f5fAAAAanRSTlMABAQFBwgICQoODxETFBUXGRsqKy0tLzAwM0FCQ0ZJSk1PUVJWV2RnaWtucHFzdXd5enyAjZCTlJeZnZ6ipKSmp6iprrGysrO0ur2/wsPGzNHS1NbY2t3e4eLn6uzt7u/w8fL29/r8/f3+C80dCAAAAVlJREFUGBl9wQVXFGEAheHLromI3V3YrqKiWAh2d2BiAHpd1DHAXLt5/7PfmbOHmdl6HqU0rzva29/fe3jtZNWS33aPsr5CTlVaz5JyukUVplwk43yzso4T/HoTPSlGb38THFLGaoLPzxx7+pVghdIuAN+K9q0jx27bxe/AOaXMB/49t3eMlybutKNRYKYSm4CSvV+xg/YXYL0SncCwPVuxefYI0KFED/DCblKsyX4JHFBiH/DKnq7YDPs1sEeJ7cAHe4tiW+2PQLsSS4C/Q36wUMHihx76AyxSIn8TeGcPdrW1dQ/a74EbOaW0Ewy7bISgoLRJ1wlKkYOoRHBtgjLWEPtR+vST2CpVOEPGKVVa8JiUR3NVZS8pnao27T5j+lpVQ4Exm1XLuKuUXcmrppWULVcdJ4mdUD1zBggGZqmu3QS7VN/Uu3CnRQ1shA1qJH/5Uk4NLVuqrP86eL+Jmf8dGwAAAABJRU5ErkJggg==', null, null, null, new google.maps.Size(32,32));
+          var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            icon: myIcon
+          });
+          /* Remove if you dont want B/W Google Map */
+          /*
+          var styles = [
+          {
+          featureType: "all",
+          stylers: [
+          { saturation: -100 }
+          ]
+          }
+          ];
+          map.setOptions({styles: styles});
+          */
+          }
+          google.maps.event.addDomListener(window, 'load', initialize);
+        // Google Map Ends!
+        
+        #map.map
+
+      
+      // Content
+      .section
+        .container
+          
+          .row
+            .col-sm-4
+              .h1 Адреc
+              p г. Харьков, пер. Костюринский, 2, 
+                br
+                | ТРЦ Palladium 2 уровень
+            .col-sm-4
+              .h1 Режим работы
+              p Понедельник - Воскресенье
+                br
+                | 10:00 - 00:00
+            .col-sm-4
+              .h1 Телефон
+              p +38 057 731-40-07
+                br
+                | +38 050 344-29-10
+          
+      // Form
+      .section
+        .container
+        
+          .section__form
+            
+            .row
+              .col-md-10.col-md-push-1
+            
+                .form
+                  .h1.text-center Напишите нам
+                  form(action="#")
+                    .row
+                      .col-md-4
+                        .form-group.has-error
+                          label.label-control.label-control--color Имя
+                          input(type="text" placeholder="").form-control.form-control--color
+                          
+                      .col-md-4
+                        .form-group
+                          label.label-control.label-control--color E-mail *
+                          input(type="text" placeholder="").form-control.form-control--color
+                          
+                      .col-md-4
+                        .form-group
+                          label.label-control.label-control--color Номер Телефона *
+                          input(type="text" placeholder="").form-control.form-control--color
+                    
+                    .row
+                      .col-md-12
+                        .form-group
+                          label.label-control.label-control--color Ваше сообщение *
+                          textarea.form-control.form-control--color
+                            
+                    .text-center
+                      button(type="button").btn.btn--default Отправить
+      
+      include ./_include/_footer
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/respond/respond.min.js'><![endif]
+
+    script(src='./js/libs/jquery/jquery-2.1.4.min.js')
+    script(src='./js/libs/jquery/jquery-migrate-1.2.1.min.js')
+    script(src='./js/libs/modernizr/modernizr.js')
+    script(src='./js/libs/plugins-scroll/plugins-scroll.js')
+    script(src='./js/vendors.js')
+    script(src='./js/common.js')

@@ -1,0 +1,63 @@
+.section.subscription
+  .container
+    
+    .subscription__row
+      .subscription__tab
+        // Nav tabs
+        ul.subscription__nav(role='tablist')
+          li.subscription__nav__sms.active(role='presentation')
+            a(href='#subscription__sms', aria-controls='subscription__sms', role='tab', data-toggle='tab')
+              svg#subscription__sms__svg.subscription__sms__svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 20 39')
+                path.st0(d='M16.5 0H3.4C1.6 0 0 1.5 0 3.2v32.7C0 37.6 1.6 39 3.4 39h13.2c1.7 0 3.5-1.4 3.5-3.1V3.2C20 1.5 18.2 0 16.5 0zM10 1.3c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5zm-.8 2H12c.2 0 .4.2.4.5 0 .2-.2.4-.4.4H9.2c-.2 0-.4-.2-.4-.4s.2-.5.4-.5zm-1.8.1c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.3-.5.5-.5zM10 37.7c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm8-4.7H2V6h16v27z')
+              span SMS-подписка на премьеры
+
+          li.subscription__nav__email(role='presentation')
+            a(href='#subscription__email', aria-controls='subscription__email', role='tab', data-toggle='tab') 
+              svg#subscription__email__svg.subscription__email__svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 32 26')
+                path.st0(d='M2 0C.9 0 0 .9 0 2v22c0 1.1.9 2 2 2h28c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2H2zm28 2L16 13 2 2h28zM2 24V5l12.7 9.5c.4.3.8.5 1.3.5s.9-.2 1.3-.5L30 5v19H2z')
+              span Email-подписка на премьеры
+
+
+      .subscription__body
+        // Tab panes
+        .tab-content
+          #subscription__sms.tab-pane.fade.active.in(role='tabpanel')
+            form.form(action="#")
+              .subscription__fieldset
+                .col-md-3.hidden-sm.hidden-xs
+                  legend SMS-подписка
+                    br 
+                    | на премьеры
+                .col-md-3.col-xs-6
+                  .form-group.has-error
+                    label.label-control Имя
+                    input(type="text" placeholder="").form-control
+                .col-md-3.col-xs-6
+                  .form-group
+                    label.label-control ТЕЛЕФОН *
+                    input(type="text" placeholder="").form-control
+                    span.help-block В формате 0503442910
+                .visible-sm.visible-xs.clear
+                  .clear0
+                .col-md-3
+                  button(type="submit").btn.btn--default.btn--subscription Подписаться
+              
+          #subscription__email.tab-pane.fade(role='tabpanel')
+            form.form(action="#")
+              .subscription__fieldset
+                .col-md-3.hidden-sm.hidden-xs
+                  legend Email-подписка
+                    br 
+                    | на премьеры
+                .col-md-3.col-xs-6
+                  .form-group.has-error
+                    label.label-control Имя
+                    input(type="text" placeholder="").form-control
+                .col-md-3.col-xs-6
+                  .form-group
+                    label.label-control EMAIL *
+                    input(type="text" placeholder="").form-control
+                .visible-sm.visible-xs.clear
+                  .clear0
+                .col-md-3
+                  button(type="submit").btn.btn--default.btn--subscription Подписаться

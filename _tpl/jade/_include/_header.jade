@@ -1,0 +1,51 @@
+-var navigation = { 'Расписание': '#', 'Стоимость': '#', 'VIP-зал': '#', 'Наш кинотеатр': '#', 'Схемы залов': '#', 'Новости и акции': '#', 'Контакты': '#'};
+
+// Header
+header.header
+  .container
+    
+    .header__row
+      div
+        .visible-sm.visible-xs
+          .toggle-button
+            i.zmdi.zmdi-menu
+        
+        .header__phone
+          div 
+            small (057) 
+            | 731-40-07
+          div 
+            small (050) 
+            | 344-29-10
+            
+      .logo
+        .logo__header
+          a(href="#")
+            img(src="./img/header-logo.svg", alt="")
+      div
+        .social.social--header
+          a(href="#")
+            i.zmdi.zmdi-vk
+          a(href="#")
+            i.zmdi.zmdi-facebook
+          a(href="#")
+            i.zmdi.zmdi-instagram
+        
+        .language.language--header
+          ul
+            li.active: a(href="#") Русский
+            li: a(href="#") English
+            
+        
+    
+// Navigation
+.container.hidden-xs.hidden-sm
+  nav.navigation(role="navigation")
+    ul
+      each val, key in navigation
+        if active === key
+          li.active
+            a(href=val, title=key)= key
+        else
+          li
+            a(href=val, title=key)= key

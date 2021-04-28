@@ -1,0 +1,90 @@
+/* forms */
+
+::-webkit-input-placeholder
+  color: $color-gray
+::-moz-placeholder
+  color: $color-gray
+:-ms-input-placeholder
+  color: $color-gray
+input:-moz-placeholder
+  color: $color-gray
+
+button, input, optgroup, select, textarea
+  margin: 0
+  font: inherit
+  color: inherit
+
+button, html input[type=button], input[type=reset], input[type=submit]
+  -webkit-appearance: button
+  cursor: pointer
+
+.form
+  &-group, &--group
+    margin-bottom: 15px
+
+  &-control, &--control
+    display: block
+    width: 100%
+    height: 40px
+    padding: 6px 10px 7px
+    font-size: rem(14)
+    line-height: 1.42857143
+    color: #d8c7af
+    background-color: transparent
+    background-image: none
+    border: 1px solid #d8c7af
+    border-radius: 3px
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+    &:focus
+      box-shadow: inset 0 1px 1px rgba(#d8c7af,0.075), 0 0 8px rgba(#d8c7af,0.6)
+      border-color: #d8c7af
+
+    &--color
+      border-color: #796658
+
+textarea.form-control, textarea.form--control
+  height: 112px
+  resize: none
+
+label
+  display: inline-block
+  max-width: 100%
+  margin-bottom: 5px
+  font-weight: normal
+  font-family: $font-segoe-regular
+  font-size: rem(12)
+  text-transform: uppercase
+  padding-left: 5px
+  outline: none
+
+.label
+  &-control
+    color: #9e846c
+    &--color
+      color: #9e846c
+
+.has
+  &-success .form-control
+    border-color: #3c763d
+
+  &-warning .form-control
+    border-color: #8a6d3b
+
+  &-error .form-control
+    border-color: #a94442
+
+  &-success .control-label
+    color: #3c763d
+
+  &-warning .control-label
+    color: #8a6d3b
+
+  &-error .control-label
+    color: #a94442
+
+/**/
+.help-block
+  font-size: 12px
+  margin: 3px 0 0 6px
+  color: #927a64

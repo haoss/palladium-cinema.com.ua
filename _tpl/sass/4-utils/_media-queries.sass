@@ -1,0 +1,521 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1339px)
+  /**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+  .header
+    &__row
+      &::before, &::after
+        width: 380px
+
+  .h1, h1
+    font-size: rem(21)
+    margin-bottom: 15px
+
+  .h2, h2
+    font-size: rem(18)
+
+  .subscription
+    &__fieldset
+      legend
+        padding-left: 15px
+
+  .scroll
+    &__body
+      &--center
+        width: 700px
+
+  .schedule__row--document
+    .poster
+      width: 190px
+    .scroll__body--center
+      width: 700px
+
+  .schedule__back
+    position: relative
+    padding-left: 0
+    font-size: rem(16)
+    margin-bottom: 10px
+    i
+      position: inherit
+      vertical-align: middle
+      display: inline-block
+      height: auto
+      line-height: inherit
+      top: inherit
+      margin-right: 10px
+    span
+      display: inline
+      line-height: inherit
+
+  .catalog-menu
+    &>ul
+      &>li
+        &>a
+          font-size: rem(21)
+          span
+            padding-left: 20px
+
+  .catalog
+    &__list
+      &>div
+        width: 25%
+
+  .scheme__gallery
+    padding: 10px
+    &>div
+      &+div
+        margin-top: 10px
+
+  .price-document__body
+    padding-left: 50px
+  .price-info
+    padding: 30px 25px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+  .header
+    &__row
+      align-items: center
+      &::before, &::after
+        display: none
+    &__phone
+      display: none
+    .logo
+      padding-left: 15px
+      padding-right: 15px
+  .logo__header
+    width: 112px
+    height: 80px
+  .language--header
+    display: none
+  .social
+    font-size: rem(22)
+    &--header
+      a
+        height: 48px
+        width: 48px
+        margin-left: 5px
+        margin-right: 5px
+
+  .section
+    &__bottom
+      &__row
+        flex-wrap: wrap
+        .order3
+          width: 100%
+          text-align: center
+          padding-top: 30px
+
+  .subscription
+    &__row
+      flex-direction: column
+    &__body
+      height: auto
+      padding-top: 10px
+      padding-bottom: 25px
+    &__nav
+      flex-direction: row
+      justify-content: space-between
+      &>li
+        width: 80px
+        &>a
+          padding: 0
+          justify-content: center
+          svg
+
+            vertical-align: middle
+
+        &.active
+          width: 100%
+          a
+            justify-content: flex-start
+            border-color: transparent !important
+            padding: 0 25px
+            svg
+              margin-right: 25px
+              &+span
+                display: inline-block
+        &.subscription__nav__email
+          a
+            margin-top: 0
+            border-top-color: transparent
+            border-left-color: #353031
+            border-right-color: transparent
+            border-bottom-color: #353031
+            height: 60px
+            line-height: 60px
+
+    &__tab
+      width: auto
+
+  .btn
+    &--subscription
+      display: block
+      margin-left: auto
+      margin-right: auto
+      margin-top: 15px
+
+  .scroll
+    &__body
+      &--center
+        width: 505px
+  .schedule__row__left
+    padding-right: 25px
+
+  .schedule__row + .schedule__row
+    margin-top: 30px
+
+  .schedule__row--document
+    .scroll__body--center
+      width: 505px
+
+  .section__head--film
+    display: block
+    &::before, &::after
+      display: none
+    .h1, h1
+      white-space: normal
+      display: block
+      width: auto
+      padding: 0
+      text-align: left
+
+  .header
+    background: #2e282a
+    margin-bottom: 15px
+
+  .section__head
+    margin-bottom: 25px
+
+  .banner
+    .map
+      padding-bottom: 50%
+
+  .news__block
+    height: auto !important
+    margin-bottom: 25px
+    figure
+      padding: 20px 65px 20px 20px
+      background: #2e282a
+      &:after
+        content: '\f2fb'
+        position: absolute
+        right: 30px
+        top: 50%
+        transform: translateY(-50%)
+        font-size: rem(32)
+        font-family: $font-material
+      figcaption
+        span
+          border-bottom: 0
+      &:hover
+        background: #d8c7af
+        span
+          color: #2e282a
+        &:after
+          color: #2e282a
+
+  .catalog-menu
+    &>ul
+      &>li
+        width: 50%
+
+  .btn
+    &--search
+      padding-left: 10px
+      padding-right: 10px
+    .zmdi-search
+      margin-right: 0
+
+  .section__search
+    padding: 20px
+
+  .catalog
+    &__list
+      &>div
+        width: 33.3%
+
+  .scheme__row
+    margin: 0
+    &>div
+      padding-left: 0
+      padding-right: 0
+    &:not(:last-child)
+      margin-bottom: 15px
+    &+.scheme__row
+      margin-top: 15px
+
+  .price-document__body
+    padding-left: 0px
+    max-width: 355px
+    margin: 0 auto
+  .price-document
+    margin-bottom: 30px
+    table
+      margin-bottom: 0
+    .img
+      margin-bottom: 30px
+  .price-info
+    padding: 20px 15px
+    .img
+      max-width: 150px
+      margin-bottom: 20px
+
+  .vip-block
+    margin-bottom: 20px
+    &+.text-center
+      padding-bottom: 20px
+
+  .news--special .news__block
+    margin-bottom: 25px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+  .footer
+    font-size: rem(16)
+    padding-top: 20px
+    padding-bottom: 20px
+    &__logo
+      margin-bottom: 20px
+
+  .section
+    padding: 25px 0
+    &__bottom
+      padding: 0
+      font-size: rem(20px)
+      &__row
+        padding-top: 20px
+        padding-bottom: 20px
+        &>div
+          width: 100%
+          text-align: center
+          padding: 0
+          &+div
+            padding-top: 10px
+        .order3
+          padding-top: 15px
+
+  .main-slider
+    &__pagination
+      a
+        top: -30px
+        height: 20px
+        width: 20px
+        line-height: 20px
+        font-size: rem(11)
+
+  .subscription
+    &__nav
+      &>li
+        &.active
+          a
+            svg
+              margin-right: 15px
+        &.subscription__sms__svg
+
+  .section
+    &__head
+      margin-bottom: 25px
+      .h1, h1
+        font-size: rem(21)
+        padding-left: 10px
+        padding-right: 10px
+
+  .schedule
+    &__scroll
+      &__shadow-left, &__shadow-right
+        display: none
+
+  .language__mobile > ul > li > a
+    height: 40px
+    line-height: 36px
+
+  .schedule
+    &__row
+      display: block
+      &__left
+        padding-right: 0
+      &>div
+        display: block
+  .scroll__body--center
+    width: 100%
+
+  .schedule__row__left
+    .poster
+      margin: 0 auto
+      figure
+        figcaption
+          height: auto
+          margin-top: 15px
+          margin-bottom: 25px
+
+  .schedule__row + .schedule__row
+    margin-top: 20px
+
+  .schedule__row--document .scroll__body--center
+    width: 100%
+
+  .schedule__row--document
+    .poster--nohover
+      margin-bottom: 20px
+
+  .poster__info--mobile
+    font-size: rem(16)
+
+  .poster__info--mobile
+    padding-top: 15px
+    p
+      margin-bottom: 0
+      &+p
+        margin-top: 10px
+
+  .news__block
+    margin-bottom: 10px
+    font-size: rem(16)
+    figure
+      padding: 10px 45px 10px 10px
+      &:after
+        right: 15px
+
+  .catalog-menu
+    &>ul
+      &>li
+        width: 100%
+        margin-bottom: 20px
+        &>a
+          margin-left: 0
+          margin-right: 0
+
+  .catalog
+    &__list
+      &>div
+        width: 50%
+        .poster
+          margin-bottom: 25px
+
+  .scheme
+    &__title
+      text-align: center
+
+  .news--special .news__block
+    margin-bottom: 10px
+
+@media (max-width: 700px) and (orientation: landscape)
+  .mobile > ul > li > a
+    height: 30px
+    line-height: 26px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px)
+  .header
+    .logo
+      padding-left: 5px
+      padding-right: 5px
+  .logo__header
+    width: 55px
+    height: 40px
+  .social
+    font-size: rem(15)
+    &--header
+      a
+        height: 25px
+        width: 25px
+        margin-left: 3px
+        margin-right: 3px
+
+  .subscription
+    &__nav
+      &>li
+        width: 65px
+        &>a
+          height: 42px !important
+          line-height: 42px !important
+          font-size: rem(18)
+        .subscription__sms__svg
+          width: 15px
+          height: 29px
+        .subscription__email__svg
+          width: 23px
+          height: 18px
+        &.active
+          &>a
+            padding: 0 21px
+    &__fieldset
+      &>div
+        width: 100% !important
+
+  .toggle-button
+    height: 30px
+    width: 30px
+    font-size: 16px
+
+  .slideout-menu__body .toggle-button
+    margin-top: 15px
+    margin-bottom: 5px
+
+  .header
+    padding-top: 5px
+    padding-bottom: 5px
+
+  .catalog-menu
+    &>ul
+      &>li
+        margin-bottom: 10px
+
+  #sorting
+    padding-left: 0
+    +clearfix
+    &>div
+      float: left
+      width: 50%
+      padding-right: 0
+      margin-right: 0
+      &:first-child
+        display: block
+        width: 100%
+        margin-bottom: 15px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px)
+  .catalog
+    &__list
+      margin: 0 -15px
+      &>div
+        .poster
+          width: auto
+          figure
+            figcaption
+              min-height: inherit
+              font-size: rem(14)
+              margin-top: 10px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 319px)
+  /**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+  /**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+  /**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  /**/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+  /**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  /**/

@@ -1,0 +1,794 @@
+/* modules */
+.seo-text
+  font-size: rem(14)
+  color: $add-color
+
+  &__button
+    padding-top: 10px
+    text-align: center
+
+  &__btn
+    background: none
+    text-transform: uppercase
+    border: 0
+    color: $link-color
+    font-size: rem(13)
+    outline: none
+    padding: 0
+    margin: 0
+    i
+      margin-left: 10px
+
+/**/
+.subscription
+  // padding: 0
+  &__row
+    display: flex
+    background: $add-bg-color url('../img/subscription-border.png') top center repeat-x
+    padding-top: 9px
+
+  &__nav
+    display: flex
+    flex-direction: column
+    width: 100%
+    margin: 0
+    padding: 0
+    background: #282324
+    &>li
+      margin: 0
+      padding: 0
+      list-style: none
+      svg
+        path
+          fill: #473e3b
+
+      .subscription__sms__svg
+        width: 20px
+        height: 39px
+
+      .subscription__email__svg
+
+        width: 32px
+        height: 26px
+
+      &>a
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 60px
+        line-height: 60px
+        text-align: center
+        border: 1px solid transparent
+        border-right-color: #353031
+        border-bottom-color: #353031
+        transition: color 0.3s ease, background-color 0.3s ease
+        text-decoration: none
+        font-size: rem(30)
+        font-family: $font-segoe-light
+        svg
+          &+span
+            display: none
+            color: #927a64
+            line-height: 1
+            text-align: left
+      &.active
+        background: #2e282a
+        a
+          border-right-color: transparent
+        svg
+          path
+            fill: #796658
+      &.subscription__nav__email
+        a
+          height: 61px
+          line-height: 61px
+          margin-top: -1px
+          border-top-color: #353031
+          border-bottom-color: transparent
+        &.active
+          a
+            border-top-color: transparent
+
+      &.subscription__nav__sms
+        &.active
+          a
+            border-bottom-color: transparent
+        a
+          border-bottom-color: #353031
+
+  &__tab
+    width: 70px
+
+  &__body
+    padding-top: 20px
+    width: 100%
+    height: 120px
+
+  &__fieldset
+    color: $add-color
+    +clearfix
+    legend
+      border: 0
+      margin: 0
+      font-size: rem(25)
+      line-height: 1.2
+      font-family: $font-segoe-light
+      color: #927a64
+      padding-top: 10px
+      padding-left: 25px
+
+/**/
+.poster
+  width: 100%
+  width: 190px
+  text-align: left
+  color: #d8c7af
+  text-align: center
+  font-size: rem(17)
+  margin-bottom: 15px
+  figure
+    position: relative
+    overflow: hidden
+    a
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      position: absolute
+      z-index: 1
+    img
+      max-width: 100%
+      display: block
+      transform-origin: 50% 100%
+      transition: all 0.3s ease
+      opacity: 1
+      vertical-align: top
+    .img
+      background-color: $color-black
+    figcaption
+      margin-top: 17px
+      height: 74px
+      overflow: hidden
+    p
+      margin: 0
+      display: inline
+      border-bottom: 1px solid #68615d
+      transition: all 0.3s ease
+      line-height: 1.4
+
+    &:hover
+      p
+        border-bottom-color: #d8c7af
+  &:hover
+    figure
+      img
+        transform: scale(1.05)
+        opacity: 0.5
+  &--nohover
+    &:hover
+      figure
+        img
+          transform: none
+          opacity: 1
+  &--document
+    width: 220px
+
+/**/
+.schedule
+  &__body
+
+    &--color
+      padding: 30px 0 15px 0
+      background: #2e282a
+      box-shadow: 115px 0 0 #2e282a, -115px 0 0 #2e282a
+
+      .schedule__scroll__shadow-left
+        background:
+          image: url('../img/scroll__shadow__left2.png')
+
+      .schedule__scroll__shadow-right
+        background:
+          image: url('../img/scroll__shadow__right2.png')
+
+  &__scroll
+    position: relative
+
+    &__body
+      white-space: nowrap
+      text-align: center
+      overflow: hidden
+      will-change: contents
+
+      .poster
+        display: inline-block
+        white-space: normal
+        vertical-align: top
+        margin-bottom: 0
+        &+.poster
+          margin-left: 24px
+        a
+          z-index: 30
+        .btn
+          z-index: 100
+          margin-top: 20px
+
+    &__shadow-left, &__shadow-right
+      background:
+        image: url('../img/scroll__shadow__left.png')
+        position: top left
+        repeat: repeat-y
+      position: absolute
+      left: -1px
+      top: 0
+      width: 65px
+      height: calc(100% - 10px)
+      z-index: 150
+
+    &__shadow-right
+      left: inherit
+      right: -1px
+      background:
+        image: url('../img/scroll__shadow__right.png')
+        position: top right
+
+  &__row
+    display: table
+    &+.schedule__row
+      margin-top: 50px
+    &>div
+      display: table-cell
+      vertical-align: top
+    &__left
+      padding-right: 50px
+
+  &__table
+    td
+      vertical-align: top
+      &:last-child
+        .scheduleDay
+          margin-right: 0
+
+
+
+/**/
+.scheduleDay
+  margin-right: 25px
+  background: url('../img/schedule-block.png')
+    repeat: repeat-y
+  width: 80px
+  &:hover
+    background-position: -80px 0
+  /* height: 320px */
+  .date
+    height: auto
+    width: 80px
+    padding: 7px 0 12px 0
+    text-align: center
+    color: #9e846c
+    font-size: rem(25)
+    font-family: $font-segoe-light
+    span
+      display: block
+      font-size: rem(11)
+      text-transform: uppercase
+      line-height: 1.3
+  .time
+    padding-top: 10px
+    overflow: hidden
+    /* height: 230px */
+    height: 290px
+    table
+      width: 100%
+      border-collapse: collapse
+
+.scheduleBlock td
+  vertical-align: top
+
+.timeRow
+  text-align: center
+  color: #d8c7af
+  font-size: rem(13)
+  a
+    color: #d8c7af
+    display: block
+    text-align: center
+    height: 28px
+    line-height: 25px
+    text-decoration: none
+    transition: all 0.3s linear 0s
+    text-decoration: underline
+    &:hover
+      background: #58483f
+
+
+/**/
+.scroll
+  &__body
+    width: 100%
+    will-change: transform
+    &--center
+      width: 900px
+    &--document
+      margin-bottom: 20px
+
+/**/
+.mCS-light-thin.mCSB_scrollTools .mCSB_draggerRail
+  background: #4d3c30
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+  background: #d5b793
+
+.mCSB_horizontal.mCSB_inside > .mCSB_container
+  margin-bottom: 20px
+
+/**/
+.slideout-menu
+  background: $bg-color
+  position: fixed
+  z-index: 3000
+  width: 100%
+  height: 0
+  overflow-x: hidden
+  overflow-y: hidden
+  transition: all 0.3s ease
+  &.slideout
+    height: 100vh
+    will-change: transform
+
+  &__body
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    height: 100%
+    padding: 0px
+
+  &__body
+    .toggle-button
+      font-size: rem(23)
+      margin-top: 35px
+
+.language__mobile
+  width: 100%
+  border-top: 1px solid #635349
+  &>ul
+    padding: 0
+    margin: 0
+    &>li
+      margin: 0
+      padding: 0
+      list-style: none
+      &>a
+        display: block
+        text-align: center
+        height: 50px
+        line-height: 46px
+        text-decoration: none
+        color: #d8c7af
+      &.active
+        display: none
+
+.toggle-button
+  height: 40px
+  width: 40px
+  display: flex
+  justify-content: center
+  align-items: center
+  color: #88725f
+  border: 2px solid #88725f
+  border-radius: 7px
+  font-size: rem(21)
+  margin: 10px
+  cursor: pointer
+
+.section__head
+  &+.section
+    padding-top: 0
+
+/**/
+.schedule
+  &__info
+    display: table
+    &>div
+      vertical-align: middle
+      display: table-cell
+      &+div
+        padding-left: 10px
+    p
+      color: #b9ab98
+      margin: 0
+    .btn--buy
+      margin: 0
+
+/**/
+.poster
+  &__info
+    font-size: rem(13)
+    background: #1a1617
+    padding: 25px 15px 15px 15px
+    color: #b9ab98
+    b
+      color: #927a64
+  &+.poster__info
+    margin-top: -15px
+
+.schedule__row--document
+  .poster
+    width: 220px
+  .schedule__row__left
+    // padding-right: 25px
+  .scroll__body--center
+    width: 870px
+
+/**/
+.schedule__back
+  text-decoration: none
+  font-size: rem(13)
+  color: #9e846c
+  position: absolute
+  display: inline-block
+  padding-left: 20px
+  line-height: 1
+  background: #241e20
+  margin-top: 1px
+  padding-right: 10px
+  span
+    display: block
+    line-height: 1
+  i
+    position: absolute
+    left: 0
+    top: 1px
+    font-size: rem(40)
+    margin-right: 5px
+    font-weight: normal
+    height: 26px
+    line-height: 26px
+
+/**/
+.film-infoblock
+  a
+    display: inline-block
+    margin-bottom: 10px
+    text-decoration: none
+    i
+      font-size: rem(27)
+      vertical-align: middle
+      margin-right: 10px
+    span
+      border-bottom: 1px dashed
+    &:hover
+      span
+        border-color: transparent
+
+/**/
+.banner
+  &--big
+    img
+      margin: 0 auto
+
+  .map
+    position: relative
+    overflow: hidden
+    height: 0px
+    padding-bottom: 400px
+    background: white
+    max-width: 1400px
+    margin: 0 auto
+
+#map_canvas
+  position: relative
+  overflow: hidden
+  height: 0px
+  padding-bottom: 200px
+  background: white
+
+/**/
+.news
+  &__block
+    font-size: rem(19)
+    margin-bottom: 50px
+    figure
+      position: relative
+      overflow: hidden
+      transition: all 0.3s ease
+      a
+        height: 100%
+        width: 100%
+        position: absolute
+        z-index: 1
+        top: 0
+        left: 0
+      img
+        margin-bottom: 15px
+        transform-origin: 50% 100%
+        transition: all 0.3s ease
+        transform: scale(1)
+        opacity: 1
+      figcaption
+        span
+          color: #d8c7af
+          border-bottom: 1px solid #68615d
+          transition: all 0.3s ease
+    &:hover
+      figure
+        figcaption
+          span
+            border-color: #d8c7af
+        img
+          transform: scale(1.05)
+          opacity: 0.5
+
+/**/
+.catalog-menu
+  +clearfix
+  &>ul
+    padding: 0
+    margin: 0
+    display: flex
+    flex-wrap: wrap
+    &>li
+      list-style: none
+      width: 33.3%
+      margin-bottom: 30px
+      &>a
+        display: flex
+        align-items: center
+        background: #332C2F
+        border-radius: 3px
+        box-shadow: 0 1px 1px rgba($color-black,0.15)
+        margin: 0 15px
+        position: relative
+        padding: 8px
+        text-decoration: none
+        font-size: rem(25)
+        font-family: $font-segoe-light
+        transition: all 0.3s linear
+        &:hover
+          background: #5a4940
+          color: #eedbc0
+        &:before
+          content: ''
+          height: 84px
+          width: 84px
+          background: url(../img/catalog-menu.jpg) 0 0 no-repeat
+          border-radius: 3px
+          overflow: hidden
+          flex-shrink: 0
+        span
+          padding-left: 35px
+          display: inline-block
+          line-height: 1.3
+
+      &.drama
+        a:before
+          background-position: 0 -84px
+
+      &.comedy
+        a:before
+          background-position: 0 -168px
+
+      &.horror
+        a:before
+          background-position: 0 -252px
+
+      &.melodrama
+        a:before
+          background-position: 0 -336px
+
+      &.fantastik
+        a:before
+          background-position: 0 -420px
+
+      &.animation
+        a:before
+          background-position: 0 -504px
+
+      &.historical
+        a:before
+          background-position: 0 -588px
+
+      &.musical
+        a:before
+          background-position: 0 -672px
+
+      &.triller
+        a:before
+          background-position: 0 -756px
+
+      &.last50
+        a:before
+          background-position: 0 -840px
+
+      &.origin-lang
+        a:before
+          background-position: 0 -924px
+
+      &.gold
+        a:before
+          background-position: 0 -1008px
+
+      &.proposal
+        a:before
+          background-position: 0 -1092px
+
+      &.lang-en
+        a:before
+          background-position: 0 -1176px
+
+      &.lang-fr
+        a:before
+          background-position: 0 -1260px
+
+      &.lang-it
+        a:before
+          background-position: 0 -1344px
+
+      &.lang-es
+        a:before
+          background-position: 0 -1428px
+
+/**/
+.catalog
+  &__list
+    display: flex
+    flex-wrap: wrap
+    &>div
+      width: 20%
+      padding: 0 15px
+
+    .poster
+      margin-left: auto
+      margin-right: auto
+      figure
+        figcaption
+          height: auto
+          min-height: 74px
+
+/**/
+.scheme
+  &__row
+    width: 100%
+    &:not(:last-child)
+      margin-bottom: 40px
+    &__left
+      img
+        margin: 0 auto
+    &+.scheme__row
+      border-top: 1px solid #4d3c30
+      padding-top: 40px
+
+  &__gallery
+    background-color: #2e282a
+    padding: 20px
+    margin-top: 40px
+    &>div
+      &+div
+        margin-top: 20px
+  &__img
+    margin: 0 auto
+
+/**/
+.price-document
+  margin-bottom: 60px
+  h2
+    font-size: rem(22)
+    line-height: 1
+    margin-bottom: 33px
+  table
+    /*width: 100%*/
+    font-family: $font-segoe-light
+    margin-bottom: 30px
+  td
+    padding: 14px 0
+    background: #2e282a
+    text-align: center
+    color: #d8c7af
+    font-size: rem(25)
+    span
+      font-size: rem(17)
+  td.separator
+    width: 25px
+    background: none
+    font-size: rem(0)
+  th
+    text-align: left
+    font-weight: normal
+    font-size: rem(15)
+    color: #9e846c
+  .td-head
+    font-size: rem(17)
+    color: #9e846c
+  .img
+    margin: 0 auto
+  &__body
+    padding-left: 100px
+
+/**/
+.price-info
+  background: #2e282a
+  font-size: rem(16)
+  color: #d8c7af
+  padding: 50px 80px 45px 80px
+  .img
+    margin: 0 auto
+
+.price-info-title
+  font-size: rem(18)
+  color: #9e846c
+  margin-bottom: 20px
+
+/**/
+#sorting
+  overflow: hidden
+  font-size: rem(17)
+  color: #9e846c
+  margin-bottom: 40px
+  padding-left: 40px
+  div
+    display: inline-block
+    vertical-align: bottom
+    margin-right: 25px
+    span
+      display: inline-block
+      margin-left: 5px
+  a
+    font-size: rem(15)
+    color: #d8c7af
+    text-decoration: none
+    &.active
+      strong
+        color: #eedbc0
+        border-color: #eedbc0
+  strong
+    font-weight: normal
+    border-bottom: 1px dashed #68615d
+    display: inline-block
+
+/**/
+.vip-block
+  padding: 20px 30px 10px 30px
+  background: #2e282a
+  text-align: center
+  color: #9e846c
+  font-size: rem(19)
+  .h3
+    color: #d8c7af
+    font-size: rem(19)
+    + img
+      margin-top: 20px
+  table
+    width: 100%
+    max-width: 300px
+    margin: 0 auto 15px
+
+  th
+    text-align: right
+    font-weight: normal
+    font-size: rem(15)
+    padding: 9px 0
+    vertical-align: bottom
+  td
+    width: 55%
+    padding: 5px 0
+    color: #d8c7af
+    font-size: rem(25)
+    font-family: $font-segoe-light
+    span
+      font-size: rem(17)
+  img
+    height: 1px
+    display: block
+
+/**/
+.movie-icon
+  margin-right: 10px
+  vertical-align: -3px
+  display: inline-block
+  top: 3px
+  position: relative
+
+/**/
+.news
+  &--special
+    .news__block
+      margin-bottom: 0

@@ -1,0 +1,21 @@
+/* gallery */
+.film-gallery
+  padding: 0
+  li
+    margin: 0
+    list-style: none
+  .gallery-item
+    margin-bottom: 15px
+    display: block
+    .img-responsive
+      opacity: 1
+      transition: all 0.3s linear
+    &:hover
+      .img-responsive
+        opacity: 0.5
+  .play
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 10

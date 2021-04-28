@@ -1,0 +1,46 @@
+- var posters = ["Квант милосердия", "Искусственный интеллект и другое длинное название", "Касабланка", "Доктор Хаус", "Каратель", "Трансформеры", "Ванильные небеса", "Наблюдатель"]
+
+// Schedule
+.section.schedule
+  .schedule__body
+    .section__head
+      h1 
+        span Cегодня 
+        | в Паладиум Синема
+    
+    .schedule__scroll
+      .schedule__scroll__shadow-left
+      .schedule__scroll__shadow-right
+      .schedule__scroll__body.scroll__body
+        
+        - each poster, i in posters
+          .poster
+            figure
+              .img
+                img(src="./tmp/poster/poster-#{i+1}.jpg", alt="#{poster}")
+              figcaption
+                p #{poster}
+              button(type="submit").btn.btn--buy 
+                b Купить билет 
+                  br
+                  span on-line
+              a(href="#")
+              
+// Schedule
+.section.schedule
+  .schedule__body.schedule__body--color
+    .section__head
+      .h1 Скоро в Palladium Cinema
+    
+    .schedule__scroll
+      .schedule__scroll__shadow-left
+      .schedule__scroll__shadow-right
+      .schedule__scroll__body.scroll__body
+        - each poster, i in posters
+          .poster
+            figure
+              .img
+                img(src="./tmp/poster/poster-#{i+1}.jpg", alt="")
+              figcaption
+                p #{poster}
+              a(href="#")

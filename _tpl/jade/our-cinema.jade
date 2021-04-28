@@ -1,0 +1,52 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Наш кинотеатр' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Наш кинотеатр' + ' - Palladium Cinema' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    <!-- Preloader -->
+    .loader
+      .loader__block
+    
+    include ./_include/_slideout-menu
+      
+    #base
+    
+      include ./_include/_header
+      
+      .container
+        .section__head
+          h1 Наш кинотеатр
+          
+      .banner.banner--big
+        picture
+          source(srcset="./tmp/our-cinema/our-cinema-767.jpg" media="(max-width: 767px)")
+          img(src="./tmp/our-cinema/our-cinema.jpg", alt="").img-responsive
+      
+      // Content
+      .section
+        .container
+          h1 Друзья! В Харькове открылся новый кинотеатр Palladium Cinema!
+          p Мы рады приветствовать Вас у себя! Наши мягкие кожаные кресла раскладываются так, чтобы Вы могли прилечь с царским комфортом. Новейшая кинотехнология Real D и объемный звук, прекрасный сервис и демократичная стоимость билетов - все это Palladium Cinema. Вы можете выбрать любой из трех наших залов - "Афины", "Лондон" или "Париж". В самом маленьком из них, «Париже», мы предлагаем уникальную возможность насладиться шедеврами кино, включая язык оригинала. Также, в этом зале, Вы можете посмотреть знаковое спортивное событие, сразиться на большом экране в X-box в компании близких людей или провести незабываемый киновечер тет-а-тет с любимым человеком.
+          p В Palladium Cinema Вы всегда в главной роли!
+
+      
+      include ./_include/_footer
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/respond/respond.min.js'><![endif]
+
+    script(src='./js/libs/jquery/jquery-2.1.4.min.js')
+    script(src='./js/libs/jquery/jquery-migrate-1.2.1.min.js')
+    script(src='./js/libs/modernizr/modernizr.js')
+    script(src='./js/libs/plugins-scroll/plugins-scroll.js')
+    script(src='./js/vendors.js')
+    script(src='./js/common.js')

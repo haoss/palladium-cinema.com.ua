@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Расписание - Palladium Cinema</title>
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><!-- Old browser -->
+        <script>
+            var $buoop = {vs:{i:10,f:25,o:15,s:6},c:2}; 
+            function $buo_f(){ 
+             var e = document.createElement("script"); 
+             e.src = "http://browser-update.org/update.min.js"; 
+             document.body.appendChild(e);
+            };
+            try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+            catch(e){window.attachEvent("onload", $buo_f)}
+            
+        </script>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body><!-- Preloader -->
+        <div class="loader">
+            <div class="loader__block"></div>
+        </div>
+        <div id="slideout-menu" class="slideout-menu">
+            <div class="slideout-menu__body">
+                <div>
+                    <div class="container">
+                        <div class="toggle-button"><i class="zmdi zmdi-close"></i></div>
+                    </div>
+                </div>
+                <div>
+                    <nav role="navigation" class="mobile"></nav>
+                </div>
+                <div>
+                    <div class="language__mobile"></div>
+                </div>
+            </div>
+        </div>
+        <div id="base">
+            <!-- Header-->
+            <header class="header">
+                <div class="container">
+                    <div class="header__row">
+                        <div>
+                            <div class="visible-sm visible-xs">
+                                <div class="toggle-button"><i class="zmdi zmdi-menu"></i></div>
+                            </div>
+                            <div class="header__phone">
+                                <div> <small>(057) </small>731-40-07</div>
+                                <div> <small>(050) </small>344-29-10</div>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <div class="logo__header"><a href="#"><img src="./img/header-logo.svg" alt=""></a></div>
+                        </div>
+                        <div>
+                            <div class="social social--header"><a href="#"><i class="zmdi zmdi-vk"></i></a><a href="#"><i class="zmdi zmdi-facebook"></i></a><a href="#"><i class="zmdi zmdi-instagram"></i></a></div>
+                            <div class="language language--header">
+                                <ul>
+                                    <li class="active"><a href="#">Русский</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Navigation-->
+            <div class="container hidden-xs hidden-sm">
+                <nav role="navigation" class="navigation">
+                    <ul>
+                        <li class="active"><a href="#" title="Расписание">Расписание</a></li>
+                        <li><a href="#" title="Стоимость">Стоимость</a></li>
+                        <li><a href="#" title="VIP-зал">VIP-зал</a></li>
+                        <li><a href="#" title="Наш кинотеатр">Наш кинотеатр</a></li>
+                        <li><a href="#" title="Схемы залов">Схемы залов</a></li>
+                        <li><a href="#" title="Новости и акции">Новости и акции</a></li>
+                        <li><a href="#" title="Контакты">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Content-->
+            <div class="container">
+                <!-- section head-->
+                <div class="section__head">
+                    <div class="h1">Расписание</div>
+                </div>
+                <div class="section schedule">
+                    <div class="schedule__row">
+                        <div class="schedule__row__left">
+                            <div class="poster">
+                                <figure>
+                                    <div class="img"><img src="./tmp/poster/poster-1.jpg" alt=""></div>
+                                    <figcaption>
+                                        <p>Квант милосердия</p>
+                                    </figcaption><a href="#"></a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="schedule__row__center">
+                            <div class="scroll__body scroll__body--center">
+                                <table class="schedule__table">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">чт</span>19<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">пт</span>20<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">сб</span>21<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">вс</span>22<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">пн</span>23<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">вт</span>24<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">ср</span>25<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">ср</span>25<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule__row">
+                        <div class="schedule__row__left">
+                            <div class="poster">
+                                <figure>
+                                    <div class="img"><img src="./tmp/poster/poster-1.jpg" alt=""></div>
+                                    <figcaption>
+                                        <p>Квант милосердия</p>
+                                    </figcaption><a href="#"></a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="schedule__row__center">
+                            <div class="scroll__body scroll__body--center">
+                                <table class="schedule__table">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">чт</span>19<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">пт</span>20<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">сб</span>21<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">вс</span>22<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">пн</span>23<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">вт</span>24<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">ср</span>25<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">ср</span>25<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule__row">
+                        <div class="schedule__row__left">
+                            <div class="poster">
+                                <figure>
+                                    <div class="img"><img src="./tmp/poster/poster-1.jpg" alt=""></div>
+                                    <figcaption>
+                                        <p>Квант милосердия</p>
+                                    </figcaption><a href="#"></a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="schedule__row__center">
+                            <div class="scroll__body scroll__body--center">
+                                <table class="schedule__table">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">чт</span>19<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">пт</span>20<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top">
+                                                <div class="scheduleDay">
+                                                    <div class="date"><span class="nom">сб</span>21<span>Май</span></div>
+                                                    <div class="time">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>13:35</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>15:20</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>17:00</span></a></div>
+                                                                        <div class="timeRow"><a href="#" class="vkino-link"><span>18:40</span></a></div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Schedule-->
+                <div class="section schedule">
+                    <div class="schedule__body schedule__body--color">
+                        <div class="section__head">
+                            <div class="h1">Скоро в <span>Прокате</span></div>
+                        </div>
+                        <div class="schedule__scroll">
+                            <div class="schedule__scroll__shadow-left"></div>
+                            <div class="schedule__scroll__shadow-right"></div>
+                            <div class="schedule__scroll__body scroll__body">
+                                <div class="poster">
+                                    <figure>
+                                        <div class="img"><img src="./tmp/poster/poster-1.jpg" alt=""></div>
+                                        <figcaption>
+                                            <p>Квант милосердия</p>
+                                        </figcaption><a href="#"></a>
+                                    </figure>
+                                </div>
+                                <div class="poster">
+                                    <figure>
+                                        <div class="img"><img src="./tmp/poster/poster-2.jpg" alt=""></div>
+                                        <figcaption>
+                                            <p>Искусственный интеллект и другое длинное название</p>
+                                        </figcaption><a href="#"></a>
+                                    </figure>
+                                </div>
+                                <div class="poster">
+                                    <figure>
+                                        <div class="img"><img src="./tmp/poster/poster-3.jpg" alt=""></div>
+                                        <figcaption>
+                                            <p>Касабланка</p>
+                                        </figcaption><a href="#"></a>
+                                    </figure>
+                                </div>
+                                <div class="poster">
+                                    <figure>
+                                        <div class="img"><img src="./tmp/poster/poster-4.jpg" alt=""></div>
+                                        <figcaption>
+                                            <p>Доктор Хаус</p>
+                                        </figcaption><a href="#"></a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section subscription">
+                <div class="container">
+                    <div class="subscription__row">
+                        <div class="subscription__tab">
+                            <!-- Nav tabs-->
+                            <ul role="tablist" class="subscription__nav">
+                                <li role="presentation" class="subscription__nav__sms active"><a href="#subscription__sms" aria-controls="subscription__sms" role="tab" data-toggle="tab">
+                                        <svg id="subscription__sms__svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 39" class="subscription__sms__svg">
+                                            <path d="M16.5 0H3.4C1.6 0 0 1.5 0 3.2v32.7C0 37.6 1.6 39 3.4 39h13.2c1.7 0 3.5-1.4 3.5-3.1V3.2C20 1.5 18.2 0 16.5 0zM10 1.3c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5zm-.8 2H12c.2 0 .4.2.4.5 0 .2-.2.4-.4.4H9.2c-.2 0-.4-.2-.4-.4s.2-.5.4-.5zm-1.8.1c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.3-.5.5-.5zM10 37.7c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm8-4.7H2V6h16v27z" class="st0"></path>
+                                        </svg><span>SMS-подписка на премьеры</span></a></li>
+                                <li role="presentation" class="subscription__nav__email"><a href="#subscription__email" aria-controls="subscription__email" role="tab" data-toggle="tab"> 
+                                        <svg id="subscription__email__svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 26" class="subscription__email__svg">
+                                            <path d="M2 0C.9 0 0 .9 0 2v22c0 1.1.9 2 2 2h28c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2H2zm28 2L16 13 2 2h28zM2 24V5l12.7 9.5c.4.3.8.5 1.3.5s.9-.2 1.3-.5L30 5v19H2z" class="st0"></path>
+                                        </svg><span>Email-подписка на премьеры</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="subscription__body">
+                            <!-- Tab panes-->
+                            <div class="tab-content">
+                                <div id="subscription__sms" role="tabpanel" class="tab-pane fade active in">
+                                    <form action="#" class="form">
+                                        <div class="subscription__fieldset">
+                                            <div class="col-md-3 hidden-sm hidden-xs">
+                                                <legend>SMS-подписка<br>на премьеры</legend>
+                                            </div>
+                                            <div class="col-md-3 col-xs-6">
+                                                <div class="form-group has-error">
+                                                    <label class="label-control">Имя</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-xs-6">
+                                                <div class="form-group">
+                                                    <label class="label-control">ТЕЛЕФОН *</label>
+                                                    <input type="text" placeholder="" class="form-control"><span class="help-block">В формате 0503442910</span>
+                                                </div>
+                                            </div>
+                                            <div class="visible-sm visible-xs clear">
+                                                <div class="clear0"></div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <button type="submit" class="btn btn--default btn--subscription">Подписаться</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="subscription__email" role="tabpanel" class="tab-pane fade">
+                                    <form action="#" class="form">
+                                        <div class="subscription__fieldset">
+                                            <div class="col-md-3 hidden-sm hidden-xs">
+                                                <legend>Email-подписка<br>на премьеры</legend>
+                                            </div>
+                                            <div class="col-md-3 col-xs-6">
+                                                <div class="form-group has-error">
+                                                    <label class="label-control">Имя</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-xs-6">
+                                                <div class="form-group">
+                                                    <label class="label-control">EMAIL *</label>
+                                                    <input type="text" placeholder="" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="visible-sm visible-xs clear">
+                                                <div class="clear0"></div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <button type="submit" class="btn btn--default btn--subscription">Подписаться</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section seo-text hidden-xs">
+                <div class="container">
+                    <div class="seo-text__head">
+                        <p>Кинотеатр Palladium Cinema в Харькове - это новый взгляд на искусство кино. Это удобство и комфорт в сочетании с демократичными ценами. Это Real D – одна из самых современных технологий проецирования 3D-изображения в мире. Это уникальные экраны с серебряным напылением. Это единственный кинотеатр в Украине, который предоставляет возможность самостоятельно выбирать, что смотреть.</p>
+                        <p>В кинотеатре Palladium Cinema все сделано для того, чтобы Вы приятно провели время. Три уютных зала с небольшим количеством мягких и удобных кожаных кресел позволяют насладиться фильмом в узком кругу ценителей хорошего кино. Душевная домашняя атмосфера, которую невозможно найти в привычных больших кинозалах, помогает полностью погрузиться в происходящее на экране действо, которое становится еще более реалистичным благодаря легким 3D-очкам.</p>
+                    </div>
+                    <div id="seo-text__body" class="collapse">
+                        <div class="seo-text__body">
+                            <p>Мы предлагаем отдых премиум класса, который можно встретить только в небольших люксовых кинотеатрах в ОАЭ или на золотом побережье Калифорнии при демократичной стоимости билетов. Мы создаем свободу выбора – именно Вы выбираете кинофильм и время просмотра в зале "Париж". И все это - в самом центре Харькова.</p>
+                            <p>Palladium Cinema - это кинотеатр в Харькове для кино-гурманов, способных по достоинству оценить комфорт просмотра, качество изображения и чистоту звука. В Palladium Cinema – Харьков - Вы всегда в главной роли!</p>
+                            <p>Не выходя из ТРЦ Palladium, Вы можете посетить лучший <a href="#">ночной клуб Харькова - Panorama Lounge</a></p>
+                        </div>
+                    </div>
+                    <div class="seo-text__button">
+                        <button href="#seo-text__body" data-toggle="collapse" data-target="#seo-text__body" id="seo-text__btn" class="seo-text__btn">Показать<i class="zmdi zmdi-chevron-down"></i></button>
+                    </div>
+                </div>
+            </div><!-- Bottom text -->
+            <div class="section section__bottom">
+                <div class="container">
+                    <div class="section__bottom__row">
+                        <div class="order1">+38 057 731-40-07</div>
+                        <div class="order2">+38 050 344-29-10</div>
+                        <div class="order3"><a href="#" class="btn btn--border">Как добраться</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__logo"><img src="./img/footer-logo.svg" alt=""></div>
+                    <p>Кинотеатр PALLADIUM CINEMA<br>Вы всегда в главной роли</p>
+                    <div class="development">Разработка студия <a href="#">DARTC </a></div>
+                </div>
+            </footer>
+        </div>
+        <!--[if gte IE 9]
+        <script src='./js/libs/html5shiv/es5-shim.min.js'>
+        <script src='./js/libs/html5shiv/html5shiv.min.js'>
+        <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+        <script src='./js/libs/respond/respond.min.js'><![endif]
+        
+        -->
+        <script src="./js/libs/jquery/jquery-2.1.4.min.js"></script>
+        <script src="./js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+        <script src="./js/libs/modernizr/modernizr.js"></script>
+        <script src="./js/libs/plugins-scroll/plugins-scroll.js"></script>
+        <script src="./js/vendors.js"></script>
+        <script src="./js/common.js"></script>
+    </body>
+</html>

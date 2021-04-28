@@ -1,0 +1,345 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Расписание' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Расписание - фильм' + ' - Palladium Cinema' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    <!-- Preloader -->
+    .loader
+      .loader__block
+    
+    include ./_include/_slideout-menu
+      
+    #base
+    
+      include ./_include/_header
+      
+      // Content
+      .container
+        
+        a(href="#").schedule__back
+          i.zmdi.zmdi-chevron-left 
+          | Вернуться к 
+          span фильмам
+        
+        // section head
+        .section__head.section__head--film
+          .h1 Бэтмен против Супермена: На заре справедливости
+            small Batman v Superman: Dawn of Justice
+        
+        .film-infoblock.visible-xs.visible-sm
+          div
+            a(href="http://www.youtube.com/watch?v=0O2aH4XLbto").popup-youtube
+              i.zmdi.zmdi-collection-video
+              span Смотреть трейлер
+          div
+            a(href="#film-description" rel="m_PageScroll2id")
+              i.zmdi.zmdi-info
+              span Описание
+          
+        .section.schedule
+          .schedule__row.schedule__row--document
+            .schedule__row__left
+              .poster.poster--nohover
+                figure
+                  .img
+                    img(src="./tmp/poster/poster-1.jpg", alt="")
+              .poster__info.hidden-xs
+                p 
+                  b Год: 
+                  | 2013
+                p 
+                  b Страна: 
+                  | США
+                p 
+                  b Жанр: 
+                  | фантастика, фэнтези, боевик, приключения
+                p 
+                  b В главных ролях: 
+                  | Киану Ривз, Хироюки Санада, Ко Шибасаки, Таданобу Асано
+                p 
+                  b Режиссер: 
+                  | Карл Ринш
+                p
+                  b Прокат: 
+                  | c 24.03.2016
+                p 
+                  b Продолжительность: 
+                  | 127 мин.
+              
+            .schedule__row__center
+              .scroll__body.scroll__body--document.scroll__body--center
+                
+                table.schedule__table
+                  tbody
+                    tr
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom чт
+                            | 19
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom пт
+                            | 20
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom сб
+                            | 21
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom вс
+                            | 22
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom пн
+                            | 23
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom вт
+                            | 24
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom ср
+                            | 25
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+                                        
+                      td(valign='top')
+                        .scheduleDay
+                          .date
+                            span.nom ср
+                            | 25
+                            span Май
+                          .time
+                            table
+                              tbody
+                                tr
+                                  td(valign='top')
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 13:35
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 15:20
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 17:00
+                                    .timeRow
+                                      a.vkino-link(href='#')
+                                        span 18:40
+              
+              .schedule__info.hidden-xs
+                div
+                  .btn.btn--buy 
+                    b Купить билет 
+                      br
+                      span on-line
+                div
+                  p — для покупки билета кликните на понравившийся сеанс.
+                  
+              .poster__info.poster__info--mobile.visible-xs
+                p 
+                  b Год: 
+                  | 2013
+                p 
+                  b Страна: 
+                  | США
+                p 
+                  b Жанр: 
+                  | фантастика, фэнтези, боевик, приключения
+                p 
+                  b В главных ролях: 
+                  | Киану Ривз, Хироюки Санада, Ко Шибасаки, Таданобу Асано
+                p 
+                  b Режиссер: 
+                  | Карл Ринш
+                p
+                  b Прокат: 
+                  | c 24.03.2016
+                p 
+                  b Продолжительность: 
+                  | 127 мин.
+              
+              #film-description.section
+                h2 Описание
+                p Опасаясь, что действия богоподобного супергероя так и останутся бесконтрольными, грозный и могущественный страж Готэм Сити бросает вызов самому почитаемому в наши дни спасителю Метрополиса, в то время как весь остальной мир решает, какой герой ему по-настоящему нужен. И пока Бэтмен и Супермен пребывают в состоянии войны друг с другом, возникает новая угроза, которая ставит человечество под самую большую опасность, с которой оно когда-либо сталкивалось.
+              
+              .section.nopt
+                h2 Трейлер и кадры из фильма
+                
+                ul.gallery.film-gallery.row
+                  li.col-md-3.col-sm-4.col-xs-6
+                    a(href="http://www.youtube.com/watch?v=0O2aH4XLbto").popup-youtube
+                      img.play(src="./img/slide-play.png", alt="")
+                      img.img-responsive(src="./tmp/991/rezcrop/r6800c680359_6574.jpg", alt="")
+                  li.col-md-3.col-sm-4.col-xs-6
+                    a(href="./tmp/991/rezcrop/r6800c680359_6574.jpg").gallery-item
+                      img.img-responsive(src="./tmp/991/rezcrop/r6800c680359_6574.jpg", alt="")
+                  li.col-md-3.col-sm-4.col-xs-6
+                    a(href="./tmp/991/rezcrop/r6800c680359_6575.jpg").gallery-item
+                      img.img-responsive(src="./tmp/991/rezcrop/r6800c680359_6575.jpg", alt="")
+                  li.col-md-3.col-sm-4.col-xs-6
+                    a(href="./tmp/991/rezcrop/r6800c680359_6576.jpg").gallery-item
+                      img.img-responsive(src="./tmp/991/rezcrop/r6800c680359_6576.jpg", alt="")
+                  li.col-md-3.col-sm-4.col-xs-6
+                    a(href="./tmp/991/rezcrop/r6800c680359_6577.jpg").gallery-item
+                      img.img-responsive(src="./tmp/991/rezcrop/r6800c680359_6577.jpg", alt="")
+                  li.col-md-3.col-sm-4.col-xs-6
+                    a(href="./tmp/991/rezcrop/r6800c680359_6578.jpg").gallery-item
+                      img.img-responsive(src="./tmp/991/rezcrop/r6800c680359_6578.jpg", alt="")
+                  li.col-md-3.col-sm-4.col-xs-6
+                    a(href="./tmp/991/rezcrop/r6800c680359_6579.jpg").gallery-item
+                      img.img-responsive(src="./tmp/991/rezcrop/r6800c680359_6579.jpg", alt="")
+                  li.col-md-3.col-sm-4.col-xs-6
+                    a(href="./tmp/991/rezcrop/r6800c680359_6580.jpg").gallery-item
+                      img.img-responsive(src="./tmp/991/rezcrop/r6800c680359_6580.jpg", alt="")
+      
+      include ./_include/_footer
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/respond/respond.min.js'><![endif]
+
+    script(src='./js/libs/jquery/jquery-2.1.4.min.js')
+    script(src='./js/libs/modernizr/modernizr.js')
+    script(src='./js/libs/plugins-scroll/plugins-scroll.js')
+    script(src='./js/vendors.js')
+    script(src='./js/common.js')

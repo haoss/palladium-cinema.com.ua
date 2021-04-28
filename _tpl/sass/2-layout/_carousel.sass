@@ -1,0 +1,117 @@
+/* carousel */
+
+.bx-wrapper
+  box-shadow: none
+  border: 0
+  background: none
+  margin: 0
+
+// Main slider
+.main-slider
+  max-width: 1400px
+  margin: 0 auto
+  position: relative
+
+  ul, li
+    margin: 0
+    padding: 0
+    list-style: none
+  ul
+    &>li
+      &>a
+        display: block
+
+  &__block
+    /*position: absolute;
+     *z-index: 100;
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    // cursor: pointer
+    .container
+      height: 100%
+
+  &__body
+    background: rgba($bg-color, 0.8)
+    color: #d5b793
+    font-size: rem(17)
+    width: 320px
+    height: 100%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    .h1, h1
+      font-size: rem(30)
+      color: #d5b793
+      margin-bottom: 25px
+      padding-left: 30px
+      padding-right: 30px
+    p
+      padding-left: 30px
+      padding-right: 30px
+    ul
+      padding-left: 30px
+      padding-right: 30px
+    li
+      margin-left: 0
+      padding-left: 20px
+      list-style: outside none
+      position: relative
+      &::before
+        content: '\f26b'
+        position: absolute
+        left: 0
+        top: 0
+        font-family: $font-material
+        font-weight: bold
+        font-size: rem(19)
+  &__more
+    display: block
+    margin: 50px 0 0 0
+    height: 37px
+    line-height: 37px
+    color: #d8c7af
+    font-size: 15px
+    text-align: center
+    background: #9e846c
+    background: rgba(158, 132, 108, 0.5)
+    text-decoration: none
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease
+    &:hover
+      background: #b4a592
+      text-decoration: none
+      color: #241e20
+
+.main-slider
+  position: relative
+  margin-bottom: 40px
+  overflow: hidden
+  &__pagination
+    position: absolute
+    width: 100%
+    text-align: right
+    // margin-bottom: 20px
+    a
+      font-size: 15px
+      color: #d8c7af
+      width: 25px
+      height: 25px
+      background: $bg-color
+      text-align: center
+      line-height: 24px
+      display: inline-block
+      text-decoration: none
+      margin-left: 10px
+      top: -45px
+      position: relative
+      z-index: 100
+      &.active, &:hover
+        background: $link-color
+        color: $bg-color
+  &--nombottom
+    margin-bottom: 0
+
+  &+.content
+    padding-top: 0
